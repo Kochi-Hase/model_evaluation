@@ -165,6 +165,56 @@ h3 {
     margin: 0;
 }
 
+.sub-details {
+    margin: 10px 0;
+    border: 1px solid #eceff3;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.sub-details > summary {
+    background: #f7f9fc;
+    color: #334155;
+    padding: 12px 16px;
+    font-size: 0.95em;
+}
+
+.sub-details[open] > summary {
+    background: #eef2ff;
+    color: #3730a3;
+}
+
+.preview-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 10px 0 14px;
+}
+
+.preview-tab-button {
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #334155;
+    border-radius: 999px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.preview-tab-button.active {
+    background: #334155;
+    color: #ffffff;
+    border-color: #334155;
+}
+
+.preview-panel {
+    display: none;
+}
+
+.preview-panel.active {
+    display: block;
+}
+
 .metric-value {
     display: inline-block;
     background: #667eea;
